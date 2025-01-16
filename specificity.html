@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="specificity.css">
+    <style>
+        .container{
+        max-width:90% ;
+        height: 900px;
+        border: 5px solid red;
+        position: relative;
+        }
+        .box1, .box2{
+            width:300px;
+            height: 300px;
+            background-color: blue;
+        }
+        .box1{
+            background-color: blue;
+            /* position: absolute; */
+            z-index: -1;
+        }
+        .box2{
+            background-color: orange;
+            position: absolute;
+            top: 40rem;
+            right: 0;
+            margin: 0 0 0 150rem;
+            bottom: 5rem;
+            z-index: 1 ;
+        }
+        /* .specificity{
+            color: crimson;
+        } */
+        /* #specificity{
+        color: blue;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <p id="specificity" class="specificity" style="font-size: 86px; color: orange">specificity Experiment</p> -->
+<div class="container">
+  <div class="box1"></div>
+  <div class="box2"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   
+  /* shared css here */
+  :root{
+    --primary-color: #F63E7B;
+
+  }
+    *{ margin: 0;
+    padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100,200,300,400,500,600,700,800,900;
+      
+}
+.primary-btn{
+    font-size: 20px;
+    padding: 12px 20px;
+    background-color:#F63E7B ;
+    color:#ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* header section  scc start here */
+.header-bg{
+    background-color: #fff8f5; 
+}
+header nav img{
+    width : 100%;
+}
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+    
+nav{
+   padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav a img{
+    width: 130px;
+    height: 50px;
+}
+nav ul li{
+    list-style-type: none;
+
+}
+nav ul li a{
+    font-size: 22px;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* banner section css start here */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+.banner div p{
+    margin: 20px 0;
+}
+.banner img{
+    width: 50%;
+    margin-left: 35rem;
+}
+/* services section  css start here */
+section h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 6rem 0;
+  }
+  .title-heading{
+    color: var(--primary-color);
+  }
+  .display{
+    display: none;
+  }
+  .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    
+  }
+  .cart{
+    max-width: 500px;
+    height: 500px;
+    padding: 20px;
+    cursor: pointer;
+
+  }
+  .cart:hover{
+    box-shadow: 5px 5px 50px purple;
+  }
+  .cart-img{  
+    display: flex;
+    justify-content: center;
+  }
+  .cart img img{
+    width: 60px;
+    height: 60px;
+  }
+.cart-body{
+    padding: 20px;
+}
+.body h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.body h6{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+.body p{
+ text-align: center;
+ font-size: 15px;
+}
+.service-btn{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+/* professional css start here */
+/* .bg-color{
+    background-color: #e5e5e5;
+ } */
+
+ .professional{
+    display: flex;
+    margin-top: 4rem;
+    padding: 9rem 0;
+ }
+ .professional img{
+    width: 70%;
+ }
+ div h4{
+    font-size: 45px ;
+ }
+ div p{
+    margin-top: 2rem;
+    font-size: 25px;
+ }
+
+ .container-number{
+    display: flex;
+    gap: 8rem;
+    margin-top: 5rem;
+ }
+ /* testimonial css start here */
+.testimonial{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 15rem 0;
+}
+.testimonial img{
+    width: 10%;
+}
+.img{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.img h5, h6{
+    font-size: 28px;
+    font-weight: bold;
+}
+.img h6{
+    font-size: 22px;
+    font-weight: bold;
+}
+.description h6{
+    color: #FFAC0C;
+    margin-top: 10px;
+}
+/* contact css start here */
+.contact-form{
+    padding: 4rem 0;
+}
+.contact{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    
+}
+input[type=text],input[type=email]{
+    font-size: 22px;
+    width: 400px;
+    padding: 15px; 
+    border: none;
+    margin: 1rem 0;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#right{
+    margin-left: 2rem;
+}
+
+ input:focus{
+        outline: none;
+    }
+
+ #message{
+        padding: 10px 500px 200px 10px;
+    }
+    
+    /* footer section start here */
+    .footer-section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 4rem 0;
+        gap: 4rem;
+    }
+    .bg-color{
+        background-color: var(--primary-color);
+    }
+    footer{
+        color: white;
+    }
+    .footer-title{
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .column-2 > p, .column-3 > p{
+    line-height: 10px;
+    }
+    .info> p, .info {
+        line-height: 30px;
+    }
+ p > a{
+color: white;
+text-decoration: none;
+margin: 0;
+    }
+    .footer-icon{
+        font-size: 3rem;
+    }
+    
+    .fa-instagram, .fa-linkedin, .fa-youtube{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .column-1{
+        display: flex;
+        justify-content: center;
+    }
+    .address {
+        margin-left:  20px;
+
+    }
+     .fa-location-dot{
+        margin-top: 35px;
+    }
+/* responsive css */
+/* mobile device */
+ @media screen and (max-width: 576px){
+    nav, nav ul ,.professional, .container-number, .{
+    flex-direction: column;    
+ }
+ .banner{
+    flex-direction: column-reverse;
+ } 
+ nav a img{
+    width: 130px;
+    height: 50px;
+ }
+ .banner img{
+    margin: 20px auto;
+    width: 100%;
+ }
+ .services, .testimonial{
+    grid-template-co.fa-lumns: repeat(1, 1fr);
+    gap:2rem;
+}
+.professional img{
+    width: 100%;
+}
+.container-number h4, p{
+    text-align: center;
+    font-size: 25px;
+    gap: 0rem;
+    margin-top: 0;
+}
+.contact{
+    width: 90%;
+    margin: 0 auto;
+}
+input[type=text], input[type=email]{
+    width: 90%;
+}
+#right{
+    margin-left: 0;
+}
+#message{
+    padding: 15px;
+}
+.footer-section{
+grid-template-columns: repeat(1, 1fr);
+}
+.column-1{
+    flex-direction: column;
+    align-items:center ;
+}
+}
+
+ @media screen and (min-width: 577px) and (max-width: 992px) {
+    nav, nav ul, .professional, .container-number{
+        flex-direction: column;
+    } 
+    .banner{ 
+        flex-direction: column-reverse;
+    }
+    nav a img{
+        width: 130px;
+        height: 50px;
+    }
+    .banner img{
+        margin: 20px;
+        width: 100%;
+    }
+    .services, .testimonial{
+        grid-template-columns: repeat(2, 1fr);
+        gap:2rem;
+    }
+    .professional img{
+        width: 100%;
+    }
+    .container-number h4, p{
+        text-align: center;
+        font-size: 25px;
+        gap: 0rem;
+        margin-top: 0;
+    }
+    .contact{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    input[type=text], input[type=email]{
+        width: 90%;
+    }
+    #right{
+        margin-left: 0;
+    }
+    #message{
+        padding: 15px 15px 100px 15px;
+    }
+    
+    
+    .footer-section{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .column-1{
+        flex-direction: column;
+        align-items:center ;
+    }
+
+ }
+
+
+
+ 
+
+
+
+
+
+
